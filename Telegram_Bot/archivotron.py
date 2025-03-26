@@ -13,11 +13,15 @@ def busca_in_file(busca):
     file = open('palabras.txt','r')
     if busca in file.read():
         print("lo encontre con file read")
-        return "Se encontro en palabras"
+        return "Se encontro en el archivo de palabras"
     file = open('groserias.txt','r')
     if busca in file.read():
         print("lo encontre con file read")
-        return "Dijiste una mala palabra"
+        return "Dijiste una mala palabra,se encontro en el archivo de groserias"
+    file = open('especiales.txt','r')
+    if busca in file.read():
+        print("lo encontre con file read")
+        return "Dijiste una palabra especial,se encontro en el archivo de especiales"
     file.close()
     return "No se encuentra esa palabra,porfavor digame otra"
 
